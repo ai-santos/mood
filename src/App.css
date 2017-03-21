@@ -20,10 +20,11 @@ a {
 }
 
 .page-banner > a > h1 {
-  color: grey;
+  color: #7b7d7b;
   margin-top: 150px;
   text-align: center;
   text-decoration: none;
   font-size: 300px;
   opacity: .8;
+  font-family: 'Cabin', sans-serif;
 }

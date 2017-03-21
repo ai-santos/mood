@@ -3,7 +3,7 @@ import { DefaultPlayer as Video } from 'react-html5video';
 
 import LandingModal from './components/LandingModal.js'
 import PlaylistContainer from './components/PlaylistContainer.js'
-// import MoodForm from './components/MoodForm.js'
+import MoodForm from './components/MoodForm.js'
 
 // import 'react-html5video/dist/styles.css';
 import './App.css';
@@ -51,7 +51,7 @@ class App extends Component {
     if( this.state.showLandingModal ) {
       return (
         <LandingModal hideLandingModal={this.hideLandingModal.bind(this)}>
-
+          <MoodForm submitForm={this.moodFormSubmitted.bind(this)} />
         </LandingModal>
       )
     } else {
@@ -59,9 +59,9 @@ class App extends Component {
     }
   }
 
-  // moodFormSubmitted(mood, name) {
-  //   this.setState({ mood, name, formSubmitted: true, showLandingModal: false })
-  // }
+  moodFormSubmitted(mood, name) {
+    this.setState({ mood, name, formSubmitted: true, showLandingModal: false })
+  }
 
 }
 
