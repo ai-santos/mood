@@ -1,24 +1,29 @@
 .page-banner{
   position: relative;
-  overflow-y: hidden;
-  margin: 0;
-  height: 700px;
+  overflow: hidden;
+  height: 1200px;
   width: 100%;
   background-color: black;
 }
 
-.page-banner > *{
+.page-banner > * {
   position: absolute;
+  text-align: center;
   top: 0;
   bottom: 0;
   width: 100%;
   min-height: 100%;
 }
 
-.page-heading {
-  font-size: 2rem;
-  color: purple;
+a {
+  text-decoration: none !important;
+}
+
+.page-banner > a > h1 {
+  color: grey;
+  margin-top: 150px;
+  text-align: center;
   text-decoration: none;
-  margin-top: 250px;
-  margin-left: 380px;
+  font-size: 300px;
+  opacity: .8;
 }

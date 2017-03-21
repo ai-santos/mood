@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Modal, Button } from 'react-bootstrap'
 
+import '../../public/styles/landing.css'
+
 class LandingModal extends Component {
   hideLandingModal() {
     this.props.hideLandingModal()
